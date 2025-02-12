@@ -1,0 +1,14 @@
+  <nav class="bg-red-600 text-white p-4 fixed w-full top-0 shadow-md z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <div>
+        <a href="javascript:void(0)" (click)="scrollTo('home')" class="text-xl font-bold">Lorthic Technologies</a>
+      </div>
+      <ul class="flex gap-4">
+        <li><a href="javascript:void(0)" (click)="scrollTo('home')" routerLink="/" class="hover:underline">Home</a></li>
+        <li><a href="javascript:void(0)" (click)="scrollTo('services')" routerLink="/services" class="hover:underline">Services</a></li>
+        <li><a href="javascript:void(0)" (click)="scrollTo('projects')" routerLink="/projects" class="hover:underline">Projects</a></li>
+        <li><a href="javascript:void(0)" (click)="scrollTo('about')" routerLink="/about"  class="hover:underline">About</a></li>
+        <li><a href="javascript:void(0)" (click)="scrollTo('contact')" routerLink="/contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+  </nav>

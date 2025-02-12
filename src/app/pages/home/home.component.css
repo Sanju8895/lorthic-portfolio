@@ -1,0 +1,6 @@
+.cover-page{
+    height:260px;
+    background-image: url('../../../assets/projectImg/coverImg2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

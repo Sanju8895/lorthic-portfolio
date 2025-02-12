@@ -1,0 +1,20 @@
+<!-- <footer class="bg-blue-600 text-white p-6 text-center mt-10">
+    <p>&copy; 2025 Lorthic Technologies. All Rights Reserved.</p>
+    <ul class="flex justify-center gap-4 mt-2">
+      <li><a href="#home" class="hover:underline">Home</a></li>
+      <li><a href="#services" class="hover:underline">Services</a></li>
+      <li><a href="#projects" class="hover:underline">Projects</a></li>
+      <li><a href="#about" class="hover:underline">About</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+    </ul>
+  </footer> -->
+
+
+  <footer class="bg-black text-white p-6 text-center mt-10">
+    <p>&copy; 2025 Lorthic Technologies. All Rights Reserved.</p>
+    <ul class="flex justify-center gap-4 mt-2">
+      <li *ngFor="let section of sections">
+        <a href="javascript:void(0)" (click)="scrollTo(section.id)" class="hover:underline">{{ section.title }}</a>
+      </li>
+    </ul>
+  </footer>
