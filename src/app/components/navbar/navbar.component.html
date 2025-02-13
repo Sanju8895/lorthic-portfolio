@@ -1,4 +1,4 @@
-  <nav class="bg-red-600 text-white p-4 fixed w-full top-0 shadow-md z-10">
+  <!-- <nav class="bg-red-600 text-white p-4 fixed w-full top-0 shadow-md z-10">
     <div class="container mx-auto flex justify-between items-center">
       <div>
         <a href="javascript:void(0)" (click)="scrollTo('home')" class="text-xl font-bold">Lorthic Technologies</a>
@@ -11,4 +11,29 @@
         <li><a href="javascript:void(0)" (click)="scrollTo('contact')" routerLink="/contact" class="hover:underline">Contact</a></li>
       </ul>
     </div>
+  </nav> -->
+
+  <nav class="bg-red-600 text-white p-4 fixed w-full top-0 shadow-md z-10">
+  
+    <div class="container mx-auto flex items-center justify-between">
+      <button class="md:hidden text-white text-2xl" (click)="toggleMenu()">
+        ☰
+      </button>
+      
+      <!-- Company Name (Left on Large Screens, Right on Mobile) -->
+      <div class="text-xl font-bold md:ml-0 ml-auto">Lorthic Technologies</div>
+  
+      <!-- Hamburger Menu (Only in Mobile) -->
+    
+  
+      <!-- Navbar Links -->
+      <ul class="fixed md:static top-16 left-0 bg-red-600 w-full md:w-auto md:flex gap-4 p-4 md:p-0 md:space-x-4 transition-transform transform -translate-x-full md:translate-x-0" [ngClass]="{'translate-x-0': isMenuOpen}">
+        <li><a href="javascript:void(0)" (click)="scrollTo('home')" routerLink="/" class="hover:underline block py-2">Home</a></li>
+        <li><a href="javascript:void(0)" (click)="scrollTo('services')" routerLink="/services" class="hover:underline block py-2">Services</a></li>
+        <li><a href="javascript:void(0)" (click)="scrollTo('projects')" routerLink="/projects" class="hover:underline block py-2">Projects</a></li>
+        <li><a href="javascript:void(0)" (click)="scrollTo('about')" routerLink="/about" class="hover:underline block py-2">About</a></li>
+        <li><a href="javascript:void(0)" (click)="scrollTo('contact')" routerLink="/contact" class="hover:underline block py-2">Contact</a></li>
+      </ul>
+    </div>
   </nav>
+  

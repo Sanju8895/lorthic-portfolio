@@ -18,4 +18,9 @@ export class NavbarComponent {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   }
 
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }
